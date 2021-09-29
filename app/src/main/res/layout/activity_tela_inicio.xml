@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/marrom"
+        android:alpha="0.7">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_height="130dp"
+            android:src="@drawable/logo_findpet"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="100dp"/>
+
+        <TextView
+            android:id="@+id/texto_inicio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Pets"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+
+            />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
