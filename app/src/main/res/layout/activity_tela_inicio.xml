@@ -9,30 +9,60 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         android:background="@color/marrom"
-        android:alpha="0.7">
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_height="130dp"
-            android:src="@drawable/logo_findpet"
-            android:layout_gravity="center"
             android:layout_width="fill_parent"
-            android:layout_marginBottom="100dp"/>
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:src="@drawable/logo_findpet" />
+
+        <TextView
+            android:id="@+id/titulo_inicio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:text="Find Pets"
+            android:textColor="@color/white"
+            android:textSize="35sp">
+        </TextView>
 
         <TextView
             android:id="@+id/texto_inicio"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Find Pets"
-            android:textSize="50sp"
-            android:textColor="@color/white"
             android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="90dp"
             android:gravity="center"
+            android:text="texto que defina o app"
+            android:textColor="@color/white"
+            android:textSize="25sp">
+        </TextView>
 
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rounded_corner">
+        </Button>
 
-            />
+        <Button
+            android:id="@+id/botao_inicio"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="270dp"
+            android:background="@drawable/rounded_corner">
+        </Button>
 
     </FrameLayout>
 
