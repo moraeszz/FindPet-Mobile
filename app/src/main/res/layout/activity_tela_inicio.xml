@@ -44,21 +44,27 @@
             android:gravity="center"
             android:text="texto que defina o app"
             android:textColor="@color/white"
-            android:textSize="25sp">
+            android:textSize="20sp">
         </TextView>
 
         <Button
+            android:id="@+id/botao_entrar"
             android:layout_width="300dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
+            android:text="Entrar"
+            android:textSize="20sp"
             android:layout_marginTop="200dp"
             android:background="@drawable/rounded_corner">
+
         </Button>
 
         <Button
-            android:id="@+id/botao_inicio"
+            android:id="@+id/botao_cadastrar"
             android:layout_width="300dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
+            android:text="Cadastrar"
+            android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_marginTop="270dp"
             android:background="@drawable/rounded_corner">
