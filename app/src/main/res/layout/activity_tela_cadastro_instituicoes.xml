@@ -26,7 +26,7 @@
             android:id="@+id/card_view_profile"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             app:cardCornerRadius="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -58,10 +58,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
             android:hint="Tipo de estabelecimento"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:background="@drawable/borda_cinza">
 
             <EditText
                 android:id="@+id/et_tipoE"
@@ -74,10 +75,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:hint="CNPJ"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:background="@drawable/borda_cinza">
 
             <EditText
                 android:id="@+id/et_cnpj"
@@ -90,10 +92,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:hint="Serviços"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:background="@drawable/borda_cinza">
 
             <EditText
                 android:id="@+id/et_servicos"
@@ -106,10 +109,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:hint="Localização"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:background="@drawable/borda_cinza">
 
             <EditText
                 android:id="@+id/et_local"
@@ -122,10 +126,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:hint="Descrição"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:background="@drawable/borda_cinza">
 
             <EditText
                 android:id="@+id/et_descricao"
@@ -138,12 +143,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:hint="Senha"
             android:layout_gravity="center"
-            android:background="@color/white"
-            >
+            android:background="@drawable/borda_cinza">
 
             <EditText
                 android:id="@+id/et_senha"
@@ -154,18 +158,30 @@
                 android:inputType="textPersonName"/>
         </com.google.android.material.textfield.TextInputLayout>
 
+        <CheckBox android:id="@+id/checkbox_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lembrar-me"
+            android:layout_marginTop="10dp"
+            android:onClick="onCheckboxClicked"
+            android:layout_marginLeft="230dp"
+            android:buttonTint="@color/white"
+            android:textColor="@color/white"/>
+
         <Button
             android:id="@+id/botao_cadastroIn"
             android:layout_width="150dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-
-            android:background="@color/laranja"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/borda_laranja"
             android:text="Cadastrar"
+            android:textColor="@color/white"
             android:textSize="18sp">
 
         </Button>
+
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
